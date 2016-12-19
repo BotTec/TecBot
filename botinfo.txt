@@ -1,0 +1,64 @@
+﻿<?php 
+date_default_timezone_set("Africa/Accra");
+
+//$website = "https://api.telegram.org/bot".$bottoken;
+$web = "https://api.telegram.org/bot276741919:AAHBQrP7nT4Ggs7Shh8pFUErkk7bosPE87w";
+$update = file_get_contents($web."/getupdates");
+//print_r($update);
+$updateArray= json_decode($update, true);
+//print_r($updateArray);
+
+
+$text=$updateArray["result"][0]["message"]["date"];
+
+ $length = count($updateArray["result"]);
+ //echo "<br>".$length;
+$text=$updateArray["result"][$length-1]["message"]["text"];
+// //$text0=$updateArray["result"][$length]["message"]["text"];
+$text=strtolower($text);
+ $chat_id=$updateArray["result"][0]["message"]["chat"]["id"];
+
+
+ if($text == '/start'){
+ $bottext="Welcome to BotTech, We assist You in choosing the best Mobile Phone in the World.Type this /phone for the Best Mobile Phone Companies";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'Goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
+        }
+		
+		
+		
+ if($text == '/phone'){
+ 
+ $bottext="Mobile Phone Companies:%0A1.samsung.%0A2.iphone.%0A3.tecno.%0A4.infinix.";
+			
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'Goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
+        }
+
+ if($text == 'infinix'||$text == '4' ){
+ $bottext="1.zero4plus.%0A2.note3.%0A3.hot4pro  ";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'Goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
+        }
+		
+		
+		
+?>
