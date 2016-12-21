@@ -35,7 +35,7 @@ $text=strtolower($text);
 		
  if($text == '/phone'){
  
- $bottext="Mobile Phone Companies:%0A1.samsung.%0A2.iphone.%0A3.tecno.%0A4.infinix.";
+ $bottext="Mobile Phone Companies:%0A1.infinix.%0A2.iphone.%0A3.tecno.%0A4.samsung.";
 			
  file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
        print_r($bottext);   
@@ -47,7 +47,7 @@ $text=strtolower($text);
              
         }
 
- if($text == 'infinix'||$text == '4' ){
+ if($text == 'infinix'||$text == '1' ){
  $bottext="1.zero4plus.%0A2.note3.%0A3.hot4pro  ";
  file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
        print_r($bottext);   
@@ -60,5 +60,104 @@ $text=strtolower($text);
         }
 		
 		
+		if($text == 'zero4plus'){
+ $bottext="FEATURES:%0A1:Dimension:153.2x76.4x7.8mm.ScreenSize:5.98inches with 1080x1920pixels protected by Corning Gorilla Glass.%0A2:Camera:BackCamera:20.7megapixel with Dual LED flash.ForntCamera:13megapixel.%0A3:ProcessorType:Deca-Core.ProcessorName:HelioX20(MT6797M).Ram:4GB.GraphicsProcessor:Mali-T880.%0A4:Storage:InternalStorage:32GB.ExternalSDcard:Up to 128GB.%0A5:Platform:OS:Android6(Marshmallow)+XOS ";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
+        }
+		
+		
+		 else if($text == 'note3'){
+ $bottext="FEATURES:%0A1:Dimension:162.5x82.8x8.4mm.ScreenSize:6inches with Full High Definition.%0A2:Camera:BackCamera:13megapixel with LED flash.ForntCamera:5megapixel.%0A3:ProcessorType:1.3GHz quad-core Cortex-A53.Ram:2GB.%0A4:Storage:InternalStorage:16GB.ExternalSDcard:Up to 128GB.%0A5:Platform:OS:Android6(Marshmallow)";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
+        }
+		
+		else ($text == 'hot4pro'){
+ $bottext="FEATURES:%0A1:Dimension:153.2x76.4x7.8mm";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
+			 
+			 //iphone
+			 
+			  if($text == 'iphone'||$text == '2' ){
+ $bottext="1.iphone5s.%0A2.iphone6.%0A3.iphone6plus.%0A4.iphone7  ";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'Goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
+        }
+		
+		
+		if($text == 'iphone5s'){
+ $bottext="FEATURES:%0A1:DISPLAY:LED-backlit IPS LCD, capacitive touchscreen,16M colors,4.0 inches (~60.8% screen-to-body ratio),640 x 1136 pixels (~326 ppi pixel density),MEMORY:Card Slot No,Internal 16/32/64 GB, 1 GB RAM DDR3PLATFORM:OS iOS 7, upgradable to iOS 10.2,Chipset Apple A7,CPU Dual-core 1.3 GHz Cyclone (ARM v8-based),GPU	PowerVR G6430 (quad-core graphics),CAMERA:Primary		8 MP, f/2.2, 29mm, autofocus, dual-LED (dual tone) flash,Features	1/3 sensor size, 1.5 µm pixel size, touch focus,geo-tagging, face/smile detection, HDR (photo/panorama),Video 1080p@30fps, 720p@120fps,Secondary	1.2 MP, f/2.4, 31mm, 720p@30fps, face detection,HDR, FaceTime over Wi-Fi or Cellular";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
+        }
+		
+		
+		 else if($text == 'iphone6'){
+ $bottext="FEATURES:%0A1:DISPLAY:Type 	LED-backlit IPS LCD, capacitive touchscreen,16M colors,Size 4.7 inches (~65.8% screen-to-body ratio),Resolution 750 x 1334 pixels (~326 ppi pixel density),Multitouch Yes,Protection Ion-strengthened glass, oleophobic coating-Display Zoom,PLATFORM:OS iOS 8, upgradable to iOS 10.2,ChipsetApple A8,CPUDual-core 1.4 GHz Typhoon (ARM v8-based),GPUPowerVR GX6450 (quad-core graphics),MEMORY:Card slot No,Internal 	16/64/128 GB, 1 GB RAM DDR3,CAMERA:Primary 	8 MP, f/2.2, 29mm, phase detection autofocus, dual-LED (dual tone) flash, check quality,Features1/3,sensor size, 1.5 µm pixel size, touch focus, geo-tagging, face/smile detection, HDR (photo/panorama),Video1080p@60fps, 720p@240fps, check quality,Secondary1.2 MP, f/2.2, 31mm, 720p@30fps, face detection, HDR, FaceTime over Wi-Fi or Cellular";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
+        }
+		
+		else if($text == 'iphone6plus'){
+ $bottext="FEATURES:%0A1:DISPLAY:Type 	LED-backlit IPS LCD, capacitive touchscreen, 16M colors,Size 5.5 inches (~67.8% screen-to-body ratio),Resolution 1080 x 1920 pixels (~401 ppi pixel density),Multitouch Yes,Protection 	Ion-strengthened glass, oleophobic coating,-Display Zoom,PLATFORM:OS 	iOS 8, upgradable to iOS 10.2,Chipset 	Apple A8,CPU 	Dual-core 1.4 GHz Typhoon (ARM v8-based),GPU 	PowerVR GX6450 (quad-core graphics),MEMORY:Card slotNo,Internal16/64/128 GB, 1 GB RAM DDR3CAMERA:Primary 8 MP, f/2.2, 29mm, phase detection autofocus, OIS, dual-LED (dual tone) flash, check quality,Features 1/3 sensor size, 1.5 µm pixel size, touch focus, geo-tagging, face/smile detection, HDR (photo/panorama),Video1080p@60fps, 720p@240fps, check quality,Secondary1.2 MP, f/2.2, 31mm, 720p@30fps, face detection, HDR, FaceTime over Wi-Fi or Cellular";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+		}
+		
+		else if($text == 'iphone7'){
+ $bottext="FEATURES:%0A1:DISPLAY:Type LED-backlit IPS LCD, capacitive touchscreen, 16M colors,Size 4.7 inches (~65.6% screen-to-body ratio),Resolution 	750 x 1334 pixels (~326 ppi pixel density),Multitouch Yes,Protection 	Ion-strengthened glass, oleophobic coating- Wide color gamut display- 3D Touch display & home button- Display Zoom,PLATFORM:OS iOS 10.0.1, upgradable to iOS 10.2,Chipset Apple A10 Fusion,CPU Quad-core 2.34 GHz,GPU (six-core graphics,MEMORY:Internal 32/128/256 GB, GB, 2 GB RAM,CAMERA:Primary 12 MP, f/1.8, 28mm, phase detection autofocus, OIS, quad-LED (dual tone) flash, check quality,Features1/3 sensor size, geo-tagging, simultaneous 4K video and 8MP image recording, touch focus, face/smile detection, HDR (photo/panorama),Video 2160p@30fps, 1080p@30/60/120fps, 720p@240fps, check quality,Secondary7 MP, f/2.2, 32mm, 1080p@30fps, 720p@240fps, face detection, HDR, panorama";
+ file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+       print_r($bottext);   
+                       
+        } 
+        else if($text == 'goodbye'){
+			$bottext="Goodbye";
+            file_get_contents($web."/sendmessage?chat_id=".$chat_id."&text=".$bottext);
+             
 		
 ?>
+
+
